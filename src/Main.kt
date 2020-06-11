@@ -11,7 +11,9 @@ fun main(args: Array<String>) {
         answers.add(Animals(i))
     }
 
-    println(answers)
+    answers.forEach {
+        println(it)
+    }
 }
 
 class Animals(monkeyRange: Int = 1) {
@@ -23,9 +25,7 @@ class Animals(monkeyRange: Int = 1) {
 
     override fun toString(): String {
         return """
-            rabbits : $rabbits, elephants : $elephtants,  monkies : $monkeies,  tortoise : $tortoise
-            Total : ${rabbits + elephtants + monkeies + tortoise}
-            
+            r : $rabbits, e : $elephtants, m : $monkeies,  t : $tortoise, Total : ${rabbits + elephtants + monkeies + tortoise}
         """.trimIndent()
     }
 }
