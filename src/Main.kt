@@ -7,7 +7,7 @@
 fun main(args: Array<String>) {
     // calculate all permutation.
     val answers = ArrayList<Animals>()
-    for (i in 1 until 9) {
+    for (i in 1 until 10) {
         answers.add(Animals(i))
     }
 
@@ -25,7 +25,7 @@ class Animals(monkeyRange: Int = 1) {
 
     override fun toString(): String {
         return """
-            r : $rabbits, e : $elephtants, m : $monkeies,  t : $tortoise, Total : ${rabbits + elephtants + monkeies + tortoise}
+            r: $rabbits, e: $elephtants, m: $monkeies, t: $tortoise, Total: ${rabbits + elephtants + monkeies + tortoise}
         """.trimIndent()
     }
 }
